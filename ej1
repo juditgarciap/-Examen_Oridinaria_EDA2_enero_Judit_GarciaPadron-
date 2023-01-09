@@ -1,0 +1,42 @@
+def main():
+    class stormtrooper():
+        def __innit__ (self, nombre ,rango):
+            self.nombre = nombre
+            self.rango = rango 
+
+print(" stormtrooper se ha creado con exito")
+
+class clasificar (stormtrooper):   
+   def __init__(self, nombre,rango,codigolegion, idcohoerte, idsiglo,idescuadra,ntrooper):  
+        stormtrooper().__init__(self,nombre,rango)
+        self.codigolegion= codigolegion 
+        self.idcohoerte= idcohoerte
+        self.idsiglo=  idsiglo
+        self.idescuadra= idescuadra
+        self.ntrooper= ntrooper
+        def __str__ (self):
+            return'nombre{}, rango {}, Codigo de la legión{}, identificación cohoerte{}, identficación siglo{}, identificación escuadra{} y  numero de trooper{}'. format(self.nombre,self.rango,self.codigolegion,self.idcohoerte, self.idsiglo, self.idescuadra, self.ntrooper)
+     
+
+stormtrooper = []
+
+stormtrooper1 = clasificar ('uno', 2, 5040, 2221, 20, 9089, 999)
+stormtrooper2 = clasificar ('dos', 2, 5030, 2234, 9,9800,10)
+stormtrooper3 = clasificar ('tres', 1, 1520, 120, 5300, 4,9002,9876)
+stormtrooper4= clasificar ('cuatro', 3, 3454, 200, 3150, 3,8908,33333)
+
+stormtrooper.append(stormtrooper1)
+stormtrooper.append(stormtrooper2)
+stormtrooper.append(stormtrooper3)
+stormtrooper.append(stormtrooper4)
+
+
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
