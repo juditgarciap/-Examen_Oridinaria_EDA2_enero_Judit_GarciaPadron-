@@ -1,0 +1,23 @@
+
+def main():
+    def lafuerza(mochila, num_objetos=0):
+  #comprobar mochila vacia 
+        if not mochila:
+          return False, num_objetos
+#ir sacando los objetos de la mochila
+        objeto = mochila[0]
+        mochila = mochila[1:]
+
+                # debemos buscar un sable de luz, es lo que queremos
+        if objeto == "sable de luz":
+            return True, num_objetos
+
+  # seguimos buscando si no es un sable de luz 
+        return lafuerza(mochila, num_objetos + 1)
+
+if __name__=="main_":
+    lista = ["sable de luz","gafas de sol","pistola"]
+    print(lafuerza(lista))
+
+if __name__ == "_main_":
+    main()
